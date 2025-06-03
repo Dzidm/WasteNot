@@ -24,7 +24,7 @@ const Settings = ({ onBack }) => {
   };
 
   return (
-    <div className="p-6 bg-yellow-50 min-h-screen">
+    <div className="p-6 min-h-screen">
       {/* Back Button */}
       <button onClick={onBack} className="flex items-center gap-2 text-yellow-600 mb-6">
         <span>&larr;</span> Back to Dashboard
@@ -105,7 +105,7 @@ const Settings = ({ onBack }) => {
         {/* Save Button */}
         <button
           type="submit"
-          className="w-full bg-yellow-600 text-white font-bold p-3 rounded-md hover:bg-yellow-500"
+          className="w-full bg-yellow-400 text-white font-bold p-3 rounded-md hover:bg-yellow-500"
         >
           Save Settings
         </button>

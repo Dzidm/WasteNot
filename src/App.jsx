@@ -5,13 +5,14 @@ import Contact from './pages/OtherPages/Contact';
 import Resources from './pages/OtherPages/Resources';
 import Home from '.';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import RootsLayout from './layouts/Rootslayout';
+import RootsLayout from './layouts/RootsLayout';
 import SignUp from './pages/forms/SignUp';
-import PersonalDashboard from './pages/Dashboard/PersonalDashboard';
-import Settings from './pages/Dashboard/Settings';
-import Challenges from './pages/Dashboard/Challenges';
-import PostWaste from './pages/Dashboard/PostWaste';
 import UserDashboard from './pages/OtherPages/UserDashboard';
+import DashboardLayout from './layouts/DashboardLayout';
+import Overview from './pages/Dashboard/Overview';
+import Challenges from './pages/Dashboard/Challenges';
+import Settings from './pages/Dashboard/Settings';
+import PostWaste from './pages/Dashboard/PostWaste';
 
 const router = createBrowserRouter([
   {
@@ -24,16 +25,20 @@ const router = createBrowserRouter([
       { path: 'contact', element: <Contact /> },
       { path: 'resources', element: <Resources /> },
       { path: 'userDashboard', element: <UserDashboard /> },
-      { path: 'personalDashboard', element: <PersonalDashboard /> },
       { path: 'signUp', element: <SignUp/> },
-      
+    
+    ],
+  },
+
+  {path: '/dashboard', 
+       element: <DashboardLayout/>,
+       children: [{index: true, element:<Overview/>},
       { path: 'settings', element: <Settings/> },
       { path: 'challenges', element: <Challenges/> },
       { path: 'postWaste', element: <PostWaste/> },
-      
-      
-    ],
-  },
+
+       ]
+      },
 ]);
 
 

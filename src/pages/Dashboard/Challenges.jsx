@@ -23,7 +23,7 @@ const Challenges = ({ onBack }) => {
   ];
 
   return (
-    <div className="p-6 bg-yellow-50 min-h-screen">
+    <div className="p-6 min-h-screen">
       {/* Back Button */}
       <button onClick={onBack} className="flex items-center gap-2 text-yellow-600 mb-6">
         <span>&larr;</span> Back to Dashboard
@@ -50,13 +50,13 @@ const Challenges = ({ onBack }) => {
             <p className="text-yellow-800 mt-2">{challenge.description}</p>
 
             {/* Progress Bar */}
-            <div className="bg-gray-200 h-4 rounded-full mt-4">
+            <div className="bg-yellow-200 h-4 rounded-full mt-4">
               <div
-                className="bg-yellow-600 h-full rounded-full"
+                className="bg-yellow-400 h-full rounded-full"
                 style={{ width: `${challenge.progress}%` }}
               ></div>
             </div>
-            <p className="text-sm text-yellow-100 mt-1">{challenge.progress}% Completed</p>
+            <p className="text-sm text-yellow-600 mt-1">{challenge.progress}% Completed</p>
           </div>
         ))}
       </div>
