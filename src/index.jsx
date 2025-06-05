@@ -3,6 +3,7 @@ import Hero from './pages/Landing/Hero'
 import Details from './pages/Landing/Details'
 import Highlights from './pages/Landing/Highlights'
 import Testimonial from './pages/Landing/Testimonial'
+import Listings from './pages/Landing/Listings'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
         <Hero/>
         <Details/>
         <Highlights/>
+        <Listings/>
         <Testimonial/>
         
     </div>

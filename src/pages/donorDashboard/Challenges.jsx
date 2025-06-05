@@ -25,9 +25,9 @@ const Challenges = ({ onBack }) => {
   return (
     <div className="p-6 min-h-screen">
       {/* Back Button */}
-      <button onClick={onBack} className="flex items-center gap-2 text-yellow-600 mb-6">
+      {/* <button onClick={onBack} className="flex items-center gap-2 text-yellow-600 mb-6">
         <span>&larr;</span> Back to Dashboard
-      </button>
+      </button> */}
 
       {/* Page Header */}
       <h1 className="text-3xl font-bold text-yellow-700 mb-2">Challenges</h1>

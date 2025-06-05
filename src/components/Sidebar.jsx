@@ -12,10 +12,10 @@ const Sidebar = () => {
 
       {/* Navigation Section */}
       <nav className="flex-1 p-4">
-        <ul>
+        <ul className="space-y-2">
           <li>
             <NavLink
-              to="/dashboard"
+              to=""
               className={({ isActive }) =>
                 `flex items-center gap-3 p-2 rounded-md ${
                   isActive ? "bg-yellow-400 text-white" : "hover:bg-yellow-200"

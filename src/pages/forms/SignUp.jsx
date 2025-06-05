@@ -58,7 +58,7 @@ const Signup = () => {
                   required
                 />
               </div>
-              <div>
+              {/* <div>
                 <label
                   htmlFor="username"
                   className="block text-lg text-brown-700 font-bold mb-2"
@@ -72,7 +72,7 @@ const Signup = () => {
                   placeholder="Choose a username"
                   required
                 />
-              </div>
+              </div> */}
               <div>
                 <label
                   htmlFor="donorType"
@@ -127,16 +127,16 @@ const Signup = () => {
             <>
               <div>
                 <label
-                  htmlFor="username"
+                  htmlFor="email"
                   className="block text-lg text-brown-700 font-bold mb-2"
                 >
-                  Username
+                  Email
                 </label>
                 <input
                   type="text"
-                  id="username"
+                  id="email"
                   className="w-full px-4 py-3 text-lg border rounded-lg focus:outline-none focus:ring focus:ring-yellow-400"
-                  placeholder="Enter your username"
+                  placeholder="Enter your email"
                   required
                 />
               </div>

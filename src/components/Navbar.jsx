@@ -22,6 +22,9 @@ const Navbar = () => {
           <Link to="/userDashboard">Dashboard</Link>
         </li>
         <li className="hover:text-orange-500 cursor-pointer transition">
+          <Link to="/listings">Donations</Link>
+        </li>
+        <li className="hover:text-orange-500 cursor-pointer transition">
           <Link to="/resources">Resources</Link>
         </li>
         <li className="hover:text-orange-500 cursor-pointer transition">

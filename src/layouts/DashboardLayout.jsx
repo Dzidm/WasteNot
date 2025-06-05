@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { useLocation, Outlet } from "react-router-dom";
 import DashNavbar from "../components/DashNavbar";
 import Sidebar from "../components/Sidebar";
-import { Outlet } from "react-router-dom";
 
 const DashboardLayout = () => {
+  const location = useLocation();
+  const mainRef = useRef(null);
+
+  useEffect(() => {
+    // Scroll the dashboard content area to top on route change
+    if (mainRef.current) {
+      mainRef.current.scrollTo(0, 0);
+    }
+  }, [location.pathname]);
+
   return (
     <div className="h-screen flex overflow-hidden">
       {/* Sidebar */}
@@ -19,7 +29,10 @@ const DashboardLayout = () => {
         </header>
 
         {/* Dashboard Content */}
-        <main className="p-6 flex-grow overflow-y-auto bg-white">
+        <main
+          ref={mainRef}
+          className="p-6 flex-grow overflow-y-auto bg-white"
+        >
           <Outlet />
         </main>
       </div>

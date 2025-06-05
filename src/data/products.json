@@ -1,0 +1,125 @@
+{
+  "title": "Food Waste Management Donor Data",
+  "donors": [
+    {
+      "id": 1,
+      "title": "Fresh Vegetables Donation",
+      "donorType": "Food Donor",
+      "donorCategory": "Individual",
+      "description": "Fresh veggies including carrots, spinach, and more.",
+      "location": "Accra, Ghana",
+      "contactPhone": "+233 24 111 2233",
+      "image": "/image/freshveggies.png"
+    },
+    {
+      "id": 2,
+      "title": "Fruit Peels and Pulp",
+      "donorType": "Waste Donor",
+      "donorCategory": "Organization",
+      "description": "Clean fruit peels and pulp suitable for composting.",
+      "location": "Kumasi, Ghana",
+      "contactPhone": "+233 54 222 3344",
+      "image": "/image/pulp.png"
+    },
+    {
+      "id": 3,
+      "title": "Leftover Cooked Meals",
+      "donorType": "Food Donor",
+      "donorCategory": "Organization",
+      "description": "Freshly cooked meals from a restaurant available for donation.",
+      "location": "Takoradi, Ghana",
+      "contactPhone": "+233 26 333 4455",
+      "image": "/image/foodextra.png"
+    },
+    {
+      "id": 4,
+      "title": "Kitchen Scraps",
+      "donorType": "Waste Donor",
+      "donorCategory": "Individual",
+      "description": "Kitchen scraps like vegetable ends and coffee grounds for composting.",
+      "location": "Tema, Ghana",
+      "contactPhone": "+233 20 444 5566",
+      "image": "/image/scrap.png"
+    },
+    {
+      "id": 5,
+      "title": "Bakery Items Donation",
+      "donorType": "Food Donor",
+      "donorCategory": "Organization",
+      "description": "Fresh bread, pastries, and cakes ready for donation.",
+      "location": "Cape Coast, Ghana",
+      "contactPhone": "+233 24 555 6677",
+      "image": "/image/bakeryitems.png"
+    },
+    {
+      "id": 6,
+      "title": "Stale Bread and Pastries",
+      "donorType": "Waste Donor",
+      "donorCategory": "Individual",
+      "description": "Stale bread and pastries suitable for compost or animal feed.",
+      "location": "Tamale, Ghana",
+      "contactPhone": "+233 27 666 7788",
+      "image": "/image/stalebread.png"
+    },
+    {
+      "id": 7,
+      "title": "Canned Food Supplies",
+      "donorType": "Food Donor",
+      "donorCategory": "Individual",
+      "description": "Unopened canned food supplies with long shelf life.",
+      "location": "Ho, Ghana",
+      "contactPhone": "+233 54 777 8899",
+      "image": "/image/canned.png"
+    },
+    {
+      "id": 8,
+      "title": "Rotten Vegetables",
+      "donorType": "Waste Donor",
+      "donorCategory": "Organization",
+      "description": "Rotten vegetables from a farm, suitable for composting.",
+      "location": "Bolgatanga, Ghana",
+      "contactPhone": "+233 30 888 9900",
+      "image": "/image/rottenveggies.png"
+    },
+    {
+      "id": 9,
+      "title": "Dairy Products Donation",
+      "donorType": "Food Donor",
+      "donorCategory": "Organization",
+      "description": "Fresh milk, cheese, and yogurt for immediate distribution.",
+      "location": "Wa, Ghana",
+      "contactPhone": "+233 26 999 0011",
+      "image": "/image/dairy.png"
+    },
+    {
+      "id": 10,
+      "title": "Spoiled Milk",
+      "donorType": "Waste Donor",
+      "donorCategory": "Individual",
+      "description": "Spoiled milk that can be processed into biogas or other uses.",
+      "location": "Sunyani, Ghana",
+      "contactPhone": "+233 27 111 0022",
+      "image": "/image/spoiledmilk.png"
+    },
+    {
+      "id": 11,
+      "title": "Frozen Foods Donation",
+      "donorType": "Food Donor",
+      "donorCategory": "Organization",
+      "description": "Frozen meats and vegetables for food banks.",
+      "location": "Accra, Ghana",
+      "contactPhone": "+233 50 222 0033",
+      "image": "/image/frozenfoods.png"
+    },
+    {
+      "id": 12,
+      "title": "Expired Canned Foods",
+      "donorType": "Waste Donor",
+      "donorCategory": "Individual",
+      "description": "Expired canned food items for safe disposal or recycling.",
+      "location": "Kumasi, Ghana",
+      "contactPhone": "+233 24 333 0044",
+      "image": "/image/expiredcanned.png"
+    }
+  ]
+}

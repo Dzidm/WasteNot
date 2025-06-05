@@ -9,12 +9,22 @@ import RootsLayout from './layouts/RootsLayout';
 import SignUp from './pages/forms/SignUp';
 import UserDashboard from './pages/OtherPages/UserDashboard';
 import DashboardLayout from './layouts/DashboardLayout';
-import Overview from './pages/Dashboard/Overview';
-import Challenges from './pages/Dashboard/Challenges';
-import Settings from './pages/Dashboard/Settings';
-import PostWaste from './pages/Dashboard/PostWaste';
+import Overview from './pages/donorDashboard/Overview';
+import Challenges from './pages/donorDashboard/Challenges';
+import Settings from './pages/donorDashboard/Settings';
+import PostWaste from './pages/donorDashboard/PostWaste';
+import DonorListings from './pages/OtherPages/DonorListings';
+import SingleListings from './pages/OtherPages/SingleListings';
+import Article1 from './pages/resourcesMaterial/Article1';
+import Article2 from './pages/resourcesMaterial/Article2';
+import Article3 from './pages/resourcesMaterial/Article3';
+import Article4 from './pages/resourcesMaterial/Article4';
+import Article5 from './pages/resourcesMaterial/Article5';
 
-const router = createBrowserRouter([
+
+
+function App() {
+  const router = createBrowserRouter([
   {
     path: '/',
     element: <RootsLayout />,
@@ -24,8 +34,22 @@ const router = createBrowserRouter([
       { path: 'about', element: <About /> },
       { path: 'contact', element: <Contact /> },
       { path: 'resources', element: <Resources /> },
-      { path: 'userDashboard', element: <UserDashboard /> },
       { path: 'signUp', element: <SignUp/> },
+      { path: 'listings', element: <DonorListings/> },
+      { path: 'listings/:id', element: <SingleListings/> },
+      { path: 'userDashboard', element: <UserDashboard /> },
+
+
+
+      { path: 'article1', element: <Article1 /> },
+      { path: 'article2', element: <Article2 /> },
+      { path: 'article3', element: <Article3 /> },
+      { path: 'article4', element: <Article4 /> },
+      { path: 'article5', element: <Article5 /> },
+
+
+
+
     
     ],
   },
@@ -33,6 +57,7 @@ const router = createBrowserRouter([
   {path: '/dashboard', 
        element: <DashboardLayout/>,
        children: [{index: true, element:<Overview/>},
+
       { path: 'settings', element: <Settings/> },
       { path: 'challenges', element: <Challenges/> },
       { path: 'postWaste', element: <PostWaste/> },
@@ -41,13 +66,12 @@ const router = createBrowserRouter([
       },
 ]);
 
-
-
-function App() {
-
- return (
+return (
       <RouterProvider router={router} />
   );
+
 }
+
+
 
 export default App

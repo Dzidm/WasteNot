@@ -54,9 +54,9 @@ const PostWaste = ({ onBack }) => {
   return (
     <div className="p-6 min-h-screen">
       {/* Back Button */}
-      <button onClick={onBack} className="flex items-center gap-2 text-yellow-600 mb-6">
+      {/* <button onClick={onBack} className="flex items-center gap-2 text-yellow-600 mb-6">
         <FaArrowLeft /> Back to Dashboard
-      </button>
+      </button> */}
 
       {/* Page Header */}
       <h1 className="text-3xl font-bold text-yellow-700 mb-2">Post Waste</h1>
@@ -272,14 +272,42 @@ const PostWaste = ({ onBack }) => {
 
         {/* Image Upload */}
         <div>
-          <label className="block font-bold text-yellow-700 mb-1">Upload an Image</label>
-          <input
-            type="file"
-            name="image"
-            onChange={handleImageUpload}
-            className="w-full border border-yellow-300 p-2 rounded-md focus:ring-yellow-500"
-          />
-        </div>
+  <label className="block font-bold text-yellow-700 mb-1">Upload Image</label>
+  <div className="relative">
+    <input
+      type="file"
+      id="file-upload"
+      onChange={handleImageUpload}
+      className="w-full border border-yellow-300 p-2 rounded-md focus:ring-yellow-500 opacity-0 absolute inset-0"
+      accept="image/*"
+    />
+    <label
+      htmlFor="file-upload"
+      className="block w-full font-bold bg-white text-yellow-600 border border-yellow-300 p-2 rounded-md cursor-pointer"
+    >
+      {formData.image ? formData.image.name : "Choose a file"}
+    </label>
+  </div>
+  {/* Show Preview if Image Exists */}
+  {formData.image && (
+    <div className="mt-4">
+      <img
+        src={URL.createObjectURL(formData.image)}
+        alt="Preview"
+        className="max-w-full h-auto rounded-md border border-yellow-300"
+      />
+      <button
+        type="button"
+        onClick={() => {
+          setFormData({ ...formData, image: null });
+        }}
+        className="mt-2 bg-red-500 text-white p-2 rounded-md hover:bg-red-600"
+      >
+        Remove Image
+      </button>
+    </div>
+  )}
+</div>
 
         {/* Submit Button */}
         <div>
